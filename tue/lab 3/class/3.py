@@ -10,9 +10,9 @@ class Square(Shape):
         return self.length * self.length
 
 class Rectangle(Shape):
-    def __init__(self, length, width):
-        self.length = length
-        self.width = width
+    def __init__(self, a, b):
+        self.length = a
+        self.width = b
 
     def area(self):
         return self.length * self.width
