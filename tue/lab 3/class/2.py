@@ -11,5 +11,6 @@ class Square(Shape):
 
 a = Shape()
 print("Shape area:", a.area())
-s = Square(5)
+n = int(input())
+s = Square(n)
 print("Square area:", s.area())
