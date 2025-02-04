@@ -7,10 +7,6 @@ class Point:
     def show(self):
         print(f"{self.x}, {self.y}")
 
-    def move(self, a, b):
-        self.x = a
-        self.y = b
-
     def dist(self, p):
         return math.sqrt((self.x - p.x) ** 2 + (self.y - p.y) ** 2)
         
