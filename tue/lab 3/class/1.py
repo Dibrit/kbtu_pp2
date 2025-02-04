@@ -3,7 +3,7 @@ class StringProcessor:
         self.text = ""
 
     def getString(self):
-        self.text = input("Enter a string: ")
+        self.text = input()
 
     def printString(self):
         print(self.text.upper())
