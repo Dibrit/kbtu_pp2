@@ -1,0 +1,68 @@
+#You can access tuple items by referring to the index number, but what is the index number of the first item? - 0
+
+#Use the correct syntax to print the first item in the fruits tuple.
+fruits = ("apple", "banana", "cherry")
+print(fruits[0])
+
+#Use the correct syntax to print the last item in the fruits tuple.
+fruits = ("apple", "banana", "cherry")
+print(fruits[-1])
+
+#Use a range of indexes to print the third, fourth, and fifth item in the tuple.
+fruits = ("apple", "banana", "cherry", "orange", "kiwi", "melon", "mango")
+print(fruits[2:5])
+
+#What will be the value of y?
+fruits = ('apple', 'banana', 'cherry')
+(x, y, z) = fruits
+print(y)					#banana
+
+#What will be the value of y?
+fruits = ('apple', 'banana', 'cherry')             #['banana', 'cherry']
+(x, *y) = fruits
+print(y)
+
+
+#What will be the value of y?
+fruits = ('apple', 'banana', 'cherry', 'mango')		#['banana', 'cherry']
+(x, *y, z) = fruits
+print(y)
+
+
+
+
+
+#What is a correct syntax for looping through the items of a tuple?
+for x in ('apple', 'banana', 'cherry'):
+  print(x)
+
+#Insert the missing part of the while loop below to loop through the items of a tuple.
+
+mytuple = ('apple', 'banana', 'cherry')
+i = 0
+while i < len(mytuple):
+  print(mytuple[i])
+  i = i + 1
+
+#Insert the missing part of the for loop below to loop through the items of a tuple by using the range function to loop through the tuple's index numbers.
+thistuple = ("apple", "banana", "cherry")
+for i in range(len(thistuple)):
+  print(thistuple[i])
+
+
+
+
+
+#What is a correct syntax for joining tuple1 and tuple2 into tuple3?
+tuple3 = tuple1 + tuple2
+
+#What is a legal way to turn this tuple: (1,2,3) into this tuple:(1,2,3,1,2,3)?
+tuple1 = (1,2,3)
+tuple1 = tuple1 * 2
+
+
+#What will be the value of tuple3?
+tuple1 = ('a', 'b' , 'c')
+tuple2 = (1, 2, 3)
+tuple3 = tuple2 + tuple1
+							#(1, 2, 3, 'a', 'b', 'c')
