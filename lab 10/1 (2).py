@@ -1,6 +1,6 @@
 import psycopg2
 
-conn = psycopg2.connect("dbname=test user=postgres password=secret")
+conn = psycopg2.connect("dbname=test1 user=artem password=1234")
 cur = conn.cursor()
 
 cur.execute("""
