@@ -22,10 +22,7 @@ ch = input()
 if ch == "1":
     n = input("имя")
     p = input("телефона")
-    cur.execute("""
-        INSERT INTO pb (n, p)
-        VALUES (%s, %s) ON CONFLICT (p) DO NOTHING;
-    """, (n, p))
+    cur.execute("""INSERT INTO pb (n, p) VALUES (%s, %s) ON CONFLICT (p) DO NOTHING; """, (n, p))
     conn.commit()
 
 elif ch == "2":
