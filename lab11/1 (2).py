@@ -40,16 +40,16 @@ elif ch == "3":
     if fch == "1":
         n = input("Имя: ")
         cur.execute("SELECT * FROM pb WHERE n = %s;", (n,))
-        rows = cur.fetchall()
-        for row in rows:
-            print(row)
+        d = cur.fetchall()
+        for i in d:
+            print(i)
     
     elif fch == "2":
         p = input("Телефон: ")
         cur.execute("SELECT * FROM pb WHERE p = %s;", (p,))
         rows = cur.fetchall()
-        for row in rows:
-            print(row)
+        for i in d:
+            print(i)
 
 elif ch == "4":
     fch = input("1 - удаление по имени, 2 - удаление по номеру: ")
